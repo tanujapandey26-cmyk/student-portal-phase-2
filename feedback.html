@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <h1 id="main-title">Feedback Form</h1>
+
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="grade.html">Grade</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<hr>
+
+<main class="content">
+
+    <section id="feedback-section" class="feedback-intro">
+        <h2>Share Your Feedback</h2>
+        <p>
+            We value your feedback and would love to hear from you.
+        </p>
+    </section>
+
+    <form id="feedback-form" class="feedback-form" action="#" method="post">
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}" required>
+        </div>
+
+        <fieldset class="form-group gender-group">
+            <legend>Gender</legend>
+
+            <div class="radio-row">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            </div>
+
+            <div class="radio-row">
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="radio-row">
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating"
+                   min="1" max="5" required>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="bca">BCA</option>
+                <option value="bsc">BSC</option>
+                <option value="ba">BA</option>
+            </select>
+        </div>
+
+        <div class="form-group checkbox-row">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Subscribe to our newsletter</label>
+        </div>
+
+        <div class="button-row">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
+    </form>
+
+</main>
+
+<hr>
+
+<footer class="site-footer">
+    <p>© 2026 Student Profile & Course Portal. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
